@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 import { useSearchParams } from 'next/navigation';
-import { CategoryButton } from '@/features/Home/components/categories/category-button';
+import  CategoryButton  from '@/features/Home/components/categories/category-button';
 
 const categories = [
   'All',
