@@ -60,7 +60,7 @@ const menuItems = [
 
 function MenuBarDemo() {
   return (
-    <div className="flex items-center justify-center p-8 md:hidden">
+    <div className="flex items-center justify-center  md:hidden w-full bg-black">
       <MenuBar
         items={menuItems.map(item => ({
           ...item,

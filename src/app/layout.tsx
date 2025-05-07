@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { SessionNavBar } from "@/features/sidebar/sidebar";
 import { MenuBarDemo } from "@/features/bottombar/bottom-bar";
+import { Footerdemo } from "@/components/ui/footer-section";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,10 +42,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             <main className="flex-1 overflow-auto md:px-12 ">
               {children}
+              <Footerdemo/>
             </main>
           </div>
 
-          <div className="sticky bottom-3.5 z-50">
+          <div className="sticky bottom-0 z-50">
             <MenuBarDemo />
           </div>
         </ThemeProvider>
