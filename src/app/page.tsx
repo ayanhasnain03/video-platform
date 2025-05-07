@@ -1,10 +1,7 @@
+import { HomePage } from "@/features/Home/home-page"
 
-const Home = () => {
-  return (
-    <div>
-Hello
-    </div>
-  )
+const page = () => {
+ return (<HomePage />)
 }
 
-export default Home
+export default page
