@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/ThemeProvider";
-import { NavBar } from "@/components/layout/navbar/nav-bar";
+import { SessionNavBar } from "@/features/sidebar/sidebar";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -34,7 +34,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-       <NavBar/>
+  <div className="hidden md:block">
+  <SessionNavBar />
+</div>
+
         {children}
 
           </ThemeProvider>
