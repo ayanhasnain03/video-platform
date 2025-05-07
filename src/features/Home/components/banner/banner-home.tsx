@@ -1,7 +1,6 @@
 "use client"
 
 import { Banner } from "@/components/ui/banner"
-import { Button } from "@/components/ui/button"
 import { ArrowRight, Eclipse } from "lucide-react"
 import { useState } from "react"
 

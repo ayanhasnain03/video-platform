@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <SessionNavBar />
             </aside>
 
-            <main className="flex-1 overflow-auto md:px-12 ml-2">
+            <main className="flex-1 overflow-auto md:px-12 ">
               {children}
             </main>
           </div>
