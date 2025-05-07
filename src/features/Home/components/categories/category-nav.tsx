@@ -45,7 +45,7 @@ const SHOW_CATEGORY = 10
   const isAtEnd = currentIndex >= categories.length - SHOW_CATEGORY;
 
   return (
-    <div className="w-[25rem] px-2 md:px-0 md:w-full shadow-sm sticky top-0 z-10">
+    <div className="w-[25rem] px-2 md:px-0 md:w-full  sticky top-0 z-10">
       <div className="container mx-auto ">
         <div className="flex items-center justify-center space-x-4">
           <button
@@ -58,7 +58,7 @@ const SHOW_CATEGORY = 10
             }`}
             aria-label="Previous category"
           >
-            <ChevronLeft className="h-6 w-6 bg-black" />
+            <ChevronLeft className="h-6 w-6 bg-background" />
           </button>
 
 
@@ -87,7 +87,7 @@ const SHOW_CATEGORY = 10
             }`}
             aria-label="Next category"
           >
-            <ChevronRight className="h-6 w-6 bg-black" />
+            <ChevronRight className="h-6 w-6 bg-background" />
           </button>
         </div>
       </div>
