@@ -23,7 +23,7 @@ const categories = [
   'Jewelry',
 ];
 
-export const CategoryNav: React.FC = () => {
+ const CategoryNav: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const searchParams = useSearchParams();
   const currentSearch = searchParams.get('search')?.toLowerCase() || 'all';
@@ -95,3 +95,4 @@ const SHOW_CATEGORY = 10
   );
 };
 
+export default CategoryNav;
